@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="./calculator.css">
+    <script src="./calculator.js"></script>
+</head>
+<body>
+    <div class="calculator">
+        <div class="screen">
+            <p id="output">0</p>
+        </div>
+        <div class= "buttonscontainer">
+            <button class="button lightgraybuttons buttondouble" onclick="forClear()">C</button>
+            <button class="button lightgraybuttons" onclick="squareRoot()">√</button>
+            <button class="button orangebuttons" onclick="forDisplay('/', this.id)">÷</button>
+            <button class="button darkgraybuttons"  id="numberbutton" onclick="forDisplay('7', this.id)">7</button>
+            <button class="button darkgraybuttons" id="numberbutton" onclick="forDisplay('8', this.id)">8</button>
+            <button class="button darkgraybuttons" id="numberbutton" onclick="forDisplay('9', this.id)">9</button>
+            <button class="button orangebuttons" onclick="forDisplay('*', this.id)">X</button>
+            <button class="button darkgraybuttons" id="numberbutton" onclick="forDisplay('4', this.id)">4</button>
+            <button class="button darkgraybuttons" id="numberbutton"onclick="forDisplay('5', this.id)">5</button>
+            <button class="button darkgraybuttons" id="numberbutton"onclick="forDisplay('6', this.id)">6</button>
+            <button class="button orangebuttons" onclick="forDisplay('-', this.id)">-</button>
+            <button class="button darkgraybuttons" id="numberbutton" onclick="forDisplay('1', this.id)">1</button>
+            <button class="button darkgraybuttons" id="numberbutton" onclick="forDisplay('2', this.id)">2</button>
+            <button class="button darkgraybuttons" id="numberbutton" onclick="forDisplay('3',this.id)">3</button>
+            <button class="button orangebuttons" onclick="forDisplay('+', this.id)">+</button>
+            <button class="button darkgraybuttons buttondouble" id="numberbutton" onclick="forDisplay('0', this.id)">0</button>
+            <button class="button darkgraybuttons"  onclick="forDisplay('.', this.id)">.</button>
+            <button class="button darkgraybuttons" onclick="solve()">=</button>
+        </div>
+    </div>
+</body>
+</html>
